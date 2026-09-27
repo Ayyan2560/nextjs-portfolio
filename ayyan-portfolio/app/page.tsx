@@ -41,6 +41,13 @@ export default function Home() {
             >
               Contact Me
             </a>
+            <a
+              href="/Ayyan-Rizwan-CV.pdf"
+              download
+              className="rounded-lg border border-white/20 px-6 py-3 font-medium transition hover:bg-white/10"
+            >
+              Download CV
+            </a>
           </div>
         </div>
       </section>

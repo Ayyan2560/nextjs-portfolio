@@ -5,34 +5,39 @@ import { FormEvent, useState } from "react";
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
-  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
+ async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  event.preventDefault();
 
-    setLoading(true);
+  setLoading(true);
+  setError(false);
 
-    const form = event.currentTarget;
-    const formData = new FormData(form);
+  const form = event.currentTarget;
+  const formData = new FormData(form);
 
-    try {
-      const response = await fetch("https://formspree.io/f/maewvald", {
-        method: "POST",
-        body: formData,
-        headers: {
-          Accept: "application/json",
-        },
-      });
+  try {
+    const response = await fetch("https://formspree.io/f/maewvald", {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    });
 
-      if (response.ok) {
-        setSubmitted(true);
-        form.reset();
-      }
-    } catch (error) {
-      console.error("Form submission failed:", error);
-    } finally {
-      setLoading(false);
+    if (response.ok) {
+      setSubmitted(true);
+      form.reset();
+    } else {
+      setError(true);
     }
+  } catch (error) {
+    console.error("Form submission failed:", error);
+    setError(true);
+  } finally {
+    setLoading(false);
   }
+}
 
   return (
     <section id="contact" className="px-6 py-24">
