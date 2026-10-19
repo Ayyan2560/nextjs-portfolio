@@ -1,106 +1,115 @@
 export default function Hero() {
   return (
-    <section
-      id="home"
-      className="relative flex min-h-[90vh] items-center justify-center px-6 pt-28 pb-16 bg-grid-pattern"
-    >
-      {/* Ambient background glows */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -top-20 left-1/2 -z-10 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-blue-600/15 blur-[120px] md:h-[600px] md:w-[750px]"
-      />
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute top-1/2 right-4 -z-10 h-[280px] w-[280px] rounded-full bg-cyan-500/10 blur-[100px]"
-      />
+    <section id="home" className="paper-grid relative overflow-hidden px-5 pb-20 pt-32 sm:px-8 sm:pt-36 lg:px-10 lg:pb-28 lg:pt-40">
+      <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+        <div className="relative z-10">
+          <div className="inline-flex items-center gap-2 rounded-full border border-[#d8d7cf] bg-[#f5f4ee]/90 px-3.5 py-2">
+            <span className="h-2 w-2 rounded-full bg-[#2855e8]" />
+            <span className="font-mono text-[10px] font-medium uppercase tracking-[0.14em] text-[#555a52] sm:text-[11px]">
+              Karachi, Pakistan · Available for opportunities
+            </span>
+          </div>
 
-      <div className="relative mx-auto max-w-4xl text-center">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold tracking-wide text-blue-400 backdrop-blur-md shadow-[0_0_20px_rgba(59,130,246,0.15)]">
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-500" />
-          </span>
-          <span>Frontend Developer &amp; Web Developer</span>
+          <p className="mt-9 font-mono text-xs uppercase tracking-[0.2em] text-[#646960]">
+            Hello, world. I&apos;m
+          </p>
+          <h1 className="mt-3 max-w-3xl text-[3.45rem] font-semibold leading-[0.96] tracking-[-0.075em] text-[#171916] sm:text-7xl lg:text-[5.7rem]">
+            Ayyan
+            <br />
+            <span className="text-[#2855e8]">Rizwan.</span>
+            <br />
+            <span className="text-[#7c8078]">I build for the web.</span>
+          </h1>
+
+          <p className="mt-7 max-w-xl text-base leading-7 text-[#5b6058] sm:text-lg sm:leading-8">
+            I turn ideas into responsive, useful web experiences with JavaScript, React, Next.js, and the MERN stack. I care about the details people feel when they use a product.
+          </p>
+
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a
+              href="#projects"
+              className="inline-flex items-center gap-3 rounded-xl bg-[#171916] px-5 py-3.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#2b302a]"
+            >
+              Explore my work
+              <span aria-hidden="true" className="text-[#d6f56b]">↘</span>
+            </a>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 rounded-xl border border-[#cecdc4] bg-[#f5f4ee]/80 px-5 py-3.5 text-sm font-semibold text-[#242721] transition hover:border-[#2855e8] hover:text-[#2855e8]"
+            >
+              Let&apos;s talk
+            </a>
+          </div>
+
+          <div className="mt-10 flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-[#d8d7cf] pt-5">
+            <a href="https://github.com/Ayyan2560" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-[#555a52] transition hover:text-[#2855e8]">
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://www.linkedin.com/in/ayyan-rizwan78692/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-[#555a52] transition hover:text-[#2855e8]">
+              LinkedIn <span aria-hidden="true">↗</span>
+            </a>
+            <a href="mailto:ayyan786920@gmail.com" className="text-sm font-medium text-[#555a52] transition hover:text-[#2855e8]">
+              Email <span aria-hidden="true">↗</span>
+            </a>
+            <span className="hidden h-1 w-1 rounded-full bg-[#b4b5ad] sm:block" />
+            <span className="font-mono text-[10px] uppercase tracking-[0.13em] text-[#777b73]">
+              Frontend · MERN
+            </span>
+          </div>
         </div>
 
-        {/* Headline */}
-        <h1 className="mt-7 text-4xl font-extrabold tracking-tight text-white sm:text-6xl md:text-7xl">
-          Hi, I&apos;m{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-slate-400">
-            Ayyan Rizwan
-          </span>
-        </h1>
+        <div className="relative mx-auto w-full max-w-[530px] lg:ml-auto">
+          <div aria-hidden="true" className="absolute -right-3 -top-3 h-full w-full rounded-[1.6rem] border border-[#2855e8]/30 sm:-right-4 sm:-top-4" />
+          <div className="relative overflow-hidden rounded-[1.6rem] bg-[#171916] text-[#f5f4ee] shadow-[0_25px_70px_-38px_rgba(23,25,22,0.55)]">
+            <div className="flex items-center justify-between border-b border-white/10 px-5 py-4 sm:px-6">
+              <div className="flex items-center gap-2">
+                <span className="h-2.5 w-2.5 rounded-full bg-[#f28a64]" />
+                <span className="h-2.5 w-2.5 rounded-full bg-[#d6f56b]" />
+                <span className="h-2.5 w-2.5 rounded-full bg-[#83a4ff]" />
+              </div>
+              <span className="font-mono text-[10px] tracking-wide text-white/45">AYYAN / ABOUT.TS</span>
+            </div>
 
-        <p className="mt-4 text-lg font-medium tracking-tight text-blue-400 sm:text-2xl">
-          Crafting responsive, high-performance web experiences.
-        </p>
+            <div className="px-5 py-7 sm:px-7 sm:py-9">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#d6f56b]">A little about my approach</p>
+                  <h2 className="mt-3 max-w-sm text-3xl font-semibold leading-tight tracking-[-0.055em] sm:text-4xl">
+                    Build it.<br />Understand it.<br /><span className="text-white/45">Make it better.</span>
+                  </h2>
+                </div>
+                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl border border-white/15 font-mono text-xs text-[#d6f56b]">AR_</span>
+              </div>
 
-        {/* Short description */}
-        <p className="mx-auto mt-5 max-w-2xl text-base text-slate-400 sm:text-lg leading-relaxed">
-          Frontend developer based in Karachi, Pakistan. Focused on building modern, intuitive,
-          and accessible web applications using React, Next.js, and clean code practices.
-        </p>
+              <div className="mt-9 border-t border-white/10 pt-5">
+                <div className="grid grid-cols-[92px_1fr] gap-x-4 gap-y-4 font-mono text-xs sm:grid-cols-[112px_1fr] sm:text-sm">
+                  <span className="text-white/40">FOCUS</span>
+                  <span className="text-white/90">Interfaces & real-world features</span>
+                  <span className="text-white/40">FRONTEND</span>
+                  <span className="text-[#d6f56b]">JavaScript · React · Next.js</span>
+                  <span className="text-white/40">BACKEND</span>
+                  <span className="text-[#a9bdff]">Node.js · Express · MongoDB</span>
+                  <span className="text-white/40">BASED IN</span>
+                  <span className="text-white/90">Karachi, Pakistan</span>
+                </div>
+              </div>
 
-        {/* Primary Buttons */}
-        <div className="mt-9 flex flex-wrap items-center justify-center gap-3.5">
-          <a
-            href="#projects"
-            className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/25 transition-all hover:bg-blue-500 hover:shadow-blue-500/40 hover:-translate-y-0.5 active:translate-y-0"
-          >
-            <span>View Projects</span>
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-            </svg>
-          </a>
-
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.04] px-6 py-3.5 text-sm font-semibold text-slate-200 backdrop-blur-md transition-all hover:bg-white/[0.08] hover:text-white hover:border-white/20 hover:-translate-y-0.5 active:translate-y-0"
-          >
-            <span>Contact Me</span>
-          </a>
-
-          <a
-            href="/Ayyan-Rizwan-CV.pdf"
-            download="Ayyan-Rizwan-CV.pdf"
-            className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.02] px-5 py-3.5 text-sm font-semibold text-slate-300 transition-all hover:bg-white/[0.06] hover:text-white hover:-translate-y-0.5 active:translate-y-0"
-          >
-            <svg className="h-4 w-4 text-blue-400" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M7.5 12 12 16.5m0 0L16.5 12M12 16.5V3" />
-            </svg>
-            <span>Download CV</span>
-          </a>
-        </div>
-
-        {/* Social Connect strip */}
-        <div className="mt-12 flex items-center justify-center gap-4 pt-6 border-t border-white/[0.06]">
-          <span className="text-xs font-semibold uppercase tracking-wider text-slate-500">Connect:</span>
-          <a
-            href="https://github.com/Ayyan2560"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub Profile"
-            className="text-xs font-medium text-slate-400 hover:text-blue-400 border border-white/10 rounded-lg px-3 py-1.5 transition hover:border-blue-500/40"
-          >
-            GitHub ↗
-          </a>
-          <a
-            href="https://www.linkedin.com/in/ayyan-rizwan78692/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn Profile"
-            className="text-xs font-medium text-slate-400 hover:text-blue-400 border border-white/10 rounded-lg px-3 py-1.5 transition hover:border-blue-500/40"
-          >
-            LinkedIn ↗
-          </a>
-          <a
-            href="mailto:ayyan786920@gmail.com"
-            aria-label="Send Email"
-            className="text-xs font-medium text-slate-400 hover:text-blue-400 border border-white/10 rounded-lg px-3 py-1.5 transition hover:border-blue-500/40"
-          >
-            Email ↗
-          </a>
+              <div className="mt-7 flex flex-wrap gap-2">
+                {["Curious by default", "Responsive-first", "Always learning"].map((item) => (
+                  <span key={item} className="rounded-full border border-white/15 px-3 py-1.5 font-mono text-[10px] text-white/65">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="flex items-center justify-between bg-[#d6f56b] px-5 py-3 text-[#171916] sm:px-6">
+              <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.15em]">Personal portfolio</span>
+              <span className="font-mono text-[10px]">01 — 06 / selected work</span>
+            </div>
+          </div>
+          <p className="mt-5 text-right font-mono text-[10px] uppercase tracking-[0.16em] text-[#777b73]">
+            Thoughtful code. Clear interfaces.
+          </p>
         </div>
       </div>
     </section>

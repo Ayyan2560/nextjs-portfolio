@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ayyan Rizwan | Frontend Developer",
+  title: "Ayyan Rizwan — Web Developer",
   description:
-    "Portfolio of Ayyan Rizwan, a frontend developer focused on building modern and responsive web applications.",
+    "Ayyan Rizwan is a Karachi-based web developer building responsive interfaces and practical web applications with JavaScript, React, Next.js, and the MERN stack.",
   authors: [{ name: "Ayyan Rizwan" }],
   creator: "Ayyan Rizwan",
   icons: {
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#030712",
-  colorScheme: "dark",
+  themeColor: "#f5f4ee",
+  colorScheme: "light",
 };
 
 export default function RootLayout({
@@ -36,12 +36,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full scroll-smooth antialiased`}
+      className={geistSans.variable + " " + geistMono.variable + " h-full scroll-smooth antialiased"}
     >
-      <body className="min-h-full flex flex-col bg-[#030712] text-slate-100 font-sans selection:bg-blue-600 selection:text-white">
+      <body className="min-h-full bg-[#f5f4ee] font-sans text-[#171916] selection:bg-[#d6f56b] selection:text-[#171916]">
         {children}
       </body>
     </html>
   );
 }
-
