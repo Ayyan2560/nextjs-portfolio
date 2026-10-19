@@ -1,117 +1,25 @@
-export default function Hero() {
-  return (
-    <section id="home" className="paper-grid relative overflow-hidden px-5 pb-20 pt-32 sm:px-8 sm:pt-36 lg:px-10 lg:pb-28 lg:pt-40">
-      <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
-        <div className="relative z-10">
-          <div className="inline-flex items-center gap-2 rounded-full border border-[#d8d7cf] bg-[#f5f4ee]/90 px-3.5 py-2">
-            <span className="h-2 w-2 rounded-full bg-[#2855e8]" />
-            <span className="font-mono text-[10px] font-medium uppercase tracking-[0.14em] text-[#555a52] sm:text-[11px]">
-              Karachi, Pakistan · Available for opportunities
-            </span>
-          </div>
-
-          <p className="mt-9 font-mono text-xs uppercase tracking-[0.2em] text-[#646960]">
-            Hello, world. I&apos;m
-          </p>
-          <h1 className="mt-3 max-w-3xl text-[3.45rem] font-semibold leading-[0.96] tracking-[-0.075em] text-[#171916] sm:text-7xl lg:text-[5.7rem]">
-            Ayyan
-            <br />
-            <span className="text-[#2855e8]">Rizwan.</span>
-            <br />
-            <span className="text-[#7c8078]">I build for the web.</span>
-          </h1>
-
-          <p className="mt-7 max-w-xl text-base leading-7 text-[#5b6058] sm:text-lg sm:leading-8">
-            I turn ideas into responsive, useful web experiences with JavaScript, React, Next.js, and the MERN stack. I care about the details people feel when they use a product.
-          </p>
-
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href="#projects"
-              className="inline-flex items-center gap-3 rounded-xl bg-[#171916] px-5 py-3.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#2b302a]"
-            >
-              Explore my work
-              <span aria-hidden="true" className="text-[#d6f56b]">↘</span>
-            </a>
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 rounded-xl border border-[#cecdc4] bg-[#f5f4ee]/80 px-5 py-3.5 text-sm font-semibold text-[#242721] transition hover:border-[#2855e8] hover:text-[#2855e8]"
-            >
-              Let&apos;s talk
-            </a>
-          </div>
-
-          <div className="mt-10 flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-[#d8d7cf] pt-5">
-            <a href="https://github.com/Ayyan2560" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-[#555a52] transition hover:text-[#2855e8]">
-              GitHub <span aria-hidden="true">↗</span>
-            </a>
-            <a href="https://www.linkedin.com/in/ayyan-rizwan78692/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-[#555a52] transition hover:text-[#2855e8]">
-              LinkedIn <span aria-hidden="true">↗</span>
-            </a>
-            <a href="mailto:ayyan786920@gmail.com" className="text-sm font-medium text-[#555a52] transition hover:text-[#2855e8]">
-              Email <span aria-hidden="true">↗</span>
-            </a>
-            <span className="hidden h-1 w-1 rounded-full bg-[#b4b5ad] sm:block" />
-            <span className="font-mono text-[10px] uppercase tracking-[0.13em] text-[#777b73]">
-              Frontend · MERN
-            </span>
-          </div>
-        </div>
-
-        <div className="relative mx-auto w-full max-w-[530px] lg:ml-auto">
-          <div aria-hidden="true" className="absolute -right-3 -top-3 h-full w-full rounded-[1.6rem] border border-[#2855e8]/30 sm:-right-4 sm:-top-4" />
-          <div className="relative overflow-hidden rounded-[1.6rem] bg-[#171916] text-[#f5f4ee] shadow-[0_25px_70px_-38px_rgba(23,25,22,0.55)]">
-            <div className="flex items-center justify-between border-b border-white/10 px-5 py-4 sm:px-6">
-              <div className="flex items-center gap-2">
-                <span className="h-2.5 w-2.5 rounded-full bg-[#f28a64]" />
-                <span className="h-2.5 w-2.5 rounded-full bg-[#d6f56b]" />
-                <span className="h-2.5 w-2.5 rounded-full bg-[#83a4ff]" />
-              </div>
-              <span className="font-mono text-[10px] tracking-wide text-white/45">AYYAN / ABOUT.TS</span>
-            </div>
-
-            <div className="px-5 py-7 sm:px-7 sm:py-9">
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#d6f56b]">A little about my approach</p>
-                  <h2 className="mt-3 max-w-sm text-3xl font-semibold leading-tight tracking-[-0.055em] sm:text-4xl">
-                    Build it.<br />Understand it.<br /><span className="text-white/45">Make it better.</span>
-                  </h2>
-                </div>
-                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl border border-white/15 font-mono text-xs text-[#d6f56b]">AR_</span>
-              </div>
-
-              <div className="mt-9 border-t border-white/10 pt-5">
-                <div className="grid grid-cols-[92px_1fr] gap-x-4 gap-y-4 font-mono text-xs sm:grid-cols-[112px_1fr] sm:text-sm">
-                  <span className="text-white/40">FOCUS</span>
-                  <span className="text-white/90">Interfaces & real-world features</span>
-                  <span className="text-white/40">FRONTEND</span>
-                  <span className="text-[#d6f56b]">JavaScript · React · Next.js</span>
-                  <span className="text-white/40">BACKEND</span>
-                  <span className="text-[#a9bdff]">Node.js · Express · MongoDB</span>
-                  <span className="text-white/40">BASED IN</span>
-                  <span className="text-white/90">Karachi, Pakistan</span>
-                </div>
-              </div>
-
-              <div className="mt-7 flex flex-wrap gap-2">
-                {["Curious by default", "Responsive-first", "Always learning"].map((item) => (
-                  <span key={item} className="rounded-full border border-white/15 px-3 py-1.5 font-mono text-[10px] text-white/65">
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div className="flex items-center justify-between bg-[#d6f56b] px-5 py-3 text-[#171916] sm:px-6">
-              <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.15em]">Personal portfolio</span>
-              <span className="font-mono text-[10px]">01 — 06 / selected work</span>
-            </div>
-          </div>
-          <p className="mt-5 text-right font-mono text-[10px] uppercase tracking-[0.16em] text-[#777b73]">
-            Thoughtful code. Clear interfaces.
-          </p>
-        </div>
-      </div>
-    </section>
-  );
+export default function Hero(){
+ return <section id="home" className="relative overflow-hidden px-5 pb-16 pt-32 sm:px-8 sm:pb-20 sm:pt-36 lg:px-10 lg:pt-40">
+  <div aria-hidden="true" className="site-grid pointer-events-none absolute inset-x-0 top-0 h-[700px] opacity-70"/><div aria-hidden="true" className="pointer-events-none absolute -right-48 top-24 h-[520px] w-[520px] rounded-full bg-[#3159e8]/10 blur-[150px]"/>
+  <div className="relative mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1.08fr_.92fr] lg:gap-12">
+   <div className="relative z-10"><p className="eyebrow">Web developer · Karachi, Pakistan</p>
+    <h1 className="mt-7 max-w-4xl text-[3.55rem] font-semibold leading-[.96] tracking-[-.075em] text-[#f4f6fb] sm:text-7xl lg:text-[5.4rem] xl:text-[6rem]">I build web<br/>experiences<br/><span className="blue-text">with purpose.</span></h1>
+    <p className="mt-7 max-w-xl text-base leading-7 text-[#a3a9bb] sm:text-lg sm:leading-8">I&apos;m Ayyan Rizwan — a frontend-focused developer working with JavaScript, React, Next.js and the MERN stack. I enjoy turning ideas into useful products, then sweating the details that make them feel right.</p>
+    <div className="mt-8 flex flex-wrap items-center gap-3"><a href="#projects" className="inline-flex items-center gap-3 rounded-lg bg-[#6385ff] px-5 py-3.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#7895ff]">See selected work <span aria-hidden="true">↘</span></a><a href="#contact" className="inline-flex items-center gap-2 rounded-lg border border-white/15 px-5 py-3.5 text-sm font-semibold text-[#e5e8f0] transition hover:border-[#6385ff]/60 hover:bg-white/[0.04]">Let&apos;s connect <span aria-hidden="true" className="text-[#86a0ff]">↗</span></a></div>
+    <div className="mt-10 flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-white/10 pt-5"><span className="inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[.13em] text-[#9da4b7]"><span className="h-1.5 w-1.5 rounded-full bg-[#d4f36a]"/>Open to internships & collaboration</span><span className="hidden h-1 w-1 rounded-full bg-white/25 sm:block"/><a href="https://github.com/Ayyan2560" target="_blank" rel="noopener noreferrer" className="text-xs font-medium text-[#aeb5c6] transition hover:text-white">GitHub ↗</a><a href="https://www.linkedin.com/in/ayyan-rizwan78692/" target="_blank" rel="noopener noreferrer" className="text-xs font-medium text-[#aeb5c6] transition hover:text-white">LinkedIn ↗</a></div>
+   </div>
+   <div className="relative mx-auto w-full max-w-[610px] lg:ml-auto">
+    <div className="absolute -inset-3 rounded-2xl border border-[#6385ff]/20 sm:-inset-4"/>
+    <div className="relative overflow-hidden rounded-xl border border-white/10 bg-[#11141c] shadow-[0_35px_100px_-45px_rgba(48,81,195,.4)]">
+     <div className="flex items-center justify-between border-b border-white/10 bg-[#141823] px-4 py-3.5 sm:px-5"><div className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-full bg-[#ff6c68]"/><span className="h-2.5 w-2.5 rounded-full bg-[#f6c65b]"/><span className="h-2.5 w-2.5 rounded-full bg-[#61d69b]"/></div><span className="font-mono text-[10px] text-[#8f97ad]">selected-work / live-preview</span><span className="font-mono text-[10px] text-[#d4f36a]">01—06</span></div>
+     <a href="https://helphub01.netlify.app/" target="_blank" rel="noopener noreferrer" className="group block"><div className="relative overflow-hidden bg-[#1a1e29]">
+      <img src="https://image.thum.io/get/width/1200/crop/720/noanimate/https://helphub01.netlify.app/" alt="Live website preview of HelpHub AI, a community support platform" width={1200} height={720} fetchPriority="high" className="block aspect-[5/4] w-full object-cover object-top transition duration-500 group-hover:scale-[1.015] sm:aspect-[4/3] lg:aspect-[5/4]" onError={event=>{event.currentTarget.style.display="none"}}/>
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#090b10]/95 via-[#090b10]/45 to-transparent px-5 pb-5 pt-16 sm:px-6 sm:pb-6"><p className="font-mono text-[10px] uppercase tracking-[.15em] text-[#a6b8ff]">Featured project / 01</p><div className="mt-2 flex flex-wrap items-end justify-between gap-3"><div><h2 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">HelpHub AI</h2><p className="mt-1 text-sm text-white/65">Community support platform</p></div><span className="grid h-10 w-10 place-items-center rounded-full border border-white/25 text-lg text-white transition group-hover:border-[#d4f36a] group-hover:bg-[#d4f36a] group-hover:text-[#090b10]">↗</span></div></div>
+     </div></a>
+     <div className="grid grid-cols-3 divide-x divide-white/10 border-t border-white/10 bg-[#0e1118]"><div className="px-3 py-4 sm:px-5"><p className="font-mono text-[9px] uppercase tracking-[.14em] text-[#858da1]">Frontend</p><p className="mt-1.5 text-xs font-medium text-[#e3e7f1] sm:text-sm">JavaScript · React</p></div><div className="px-3 py-4 sm:px-5"><p className="font-mono text-[9px] uppercase tracking-[.14em] text-[#858da1]">Framework</p><p className="mt-1.5 text-xs font-medium text-[#e3e7f1] sm:text-sm">Next.js</p></div><div className="px-3 py-4 sm:px-5"><p className="font-mono text-[9px] uppercase tracking-[.14em] text-[#858da1]">Backend</p><p className="mt-1.5 text-xs font-medium text-[#e3e7f1] sm:text-sm">Node · Express</p></div></div>
+    </div><p className="mt-5 text-right font-mono text-[9px] uppercase tracking-[.15em] text-[#737b90]">Real projects · Thoughtful details · Continuous learning</p>
+   </div>
+  </div>
+  <div className="relative mx-auto mt-16 max-w-7xl border-y border-white/[0.09] py-5"><div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-3"><p className="font-mono text-[10px] uppercase tracking-[.18em] text-[#737b90]">Currently working with</p><div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-[#b8bfd0] sm:gap-x-8"><span>JavaScript</span><span>React</span><span>Next.js</span><span>Node.js</span><span>Express</span><span>MongoDB</span></div></div></div>
+ </section>
 }
